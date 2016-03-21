@@ -32,6 +32,11 @@ header('Access-Control-Allow-Origin: *');
 		  $obj->CategoryList(); 
 		break;
 
+		case 6:
+		  require("api_mobile.php");
+		  $obj=new API_MOBILE();
+		  $obj->getProductsById(); 
+		break;
 	
 	default:
 		# code...
